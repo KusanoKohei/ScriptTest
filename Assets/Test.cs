@@ -11,6 +11,7 @@ public class Boss
     public void Magic(int cost)
     {
 
+        //残りmpをチェック
         if (this.mp > cost)
         {
             //残りmpを減らす
