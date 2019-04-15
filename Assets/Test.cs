@@ -12,7 +12,7 @@ public class Boss
     {
 
         //残りmpをチェック
-        if (this.mp > cost)
+        if (this.mp >= cost)
         {
             //残りmpを減らす
             this.mp -= cost;
@@ -58,10 +58,11 @@ public class Test : MonoBehaviour
         }
 
         //配列の要素数の分だけ表示を繰り返す（降順）
-        for (int i = 4; i < array.Length; i--)
+        for (int i = array.Length -1 ; 0<=i ; i--)
         {
             Debug.Log(array[i]);
         }
+
     }
 
     // Update is called once per frame
